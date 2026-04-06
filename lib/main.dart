@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'views/home_view.dart';
 
 void main() {
+  // Initializing App
   runApp(const MyApp());
 }
 
