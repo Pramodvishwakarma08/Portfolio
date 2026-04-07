@@ -1,14 +1,11 @@
-{
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/((?!.*\\..*).*)",
-      "destination": "/index.html"
-    }
-  ],
-  "routes": [
-    { "src": "/.*", "dest": "/" }
-  ],
-  "buildCommand": "bash build.sh",
-  "outputDirectory": "build/web"
-}
+{ 
+  "builds": [ 
+    { 
+      "src": "pubspec.yaml", 
+      "use": "@vercel/static-build", 
+      "config": { 
+        "distDir": "build/web" 
+      } 
+    } 
+  ] 
+} 
