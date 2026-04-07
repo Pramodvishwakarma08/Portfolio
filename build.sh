@@ -2,7 +2,10 @@
 set -e
 
 # Install Flutter (stable) with shallow clone for speed
-if [ ! -d "flutter" ]; then
+# Check for flutter binary specifically, not just the folder
+if [ ! -f "flutter/bin/flutter" ]; then
+  echo "Cloning Flutter..."
+  rm -rf flutter
   git clone https://github.com/flutter/flutter.git -b stable --depth 1
 fi
 export PATH="$PWD/flutter/bin:$PATH"
