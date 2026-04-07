@@ -49,7 +49,7 @@ class HomeSection extends StatelessWidget {
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
                             SelectableText(
-                              "Pramod Vishwakarma",
+                              "Pramod ",
                               textAlign: TextAlign.center,
                               style: GoogleFonts.plusJakartaSans(
                                 fontSize: isMobile ? 32 : 80,
