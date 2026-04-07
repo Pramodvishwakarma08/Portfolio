@@ -10,7 +10,10 @@ class FooterSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+      padding: EdgeInsets.symmetric(
+        vertical: 50,
+        horizontal: MediaQuery.of(context).size.width * 0.12,
+      ),
       decoration: const BoxDecoration(
         color: Color(0xFF190B2D),
         border: Border(top: BorderSide(color: Color(0xFF7127BA), width: 0.1)),
@@ -47,7 +50,7 @@ class FooterSection extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            "© 2024 All Rights Reserved",
+            "© ${DateTime.now().year} All Rights Reserved",
             style: GoogleFonts.plusJakartaSans(
               fontSize: 12,
               color: Colors.white30,

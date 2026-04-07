@@ -98,11 +98,12 @@ class ProjectDetailView extends StatelessWidget {
                               physics: const NeverScrollableScrollPhysics(),
                               gridDelegate:
                                   SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: isMobile ? 2 : 4,
-                                    crossAxisSpacing: 25,
-                                    mainAxisSpacing: 25,
-                                    childAspectRatio:
-                                        0.52, // Better mobile ratio
+                                    crossAxisCount: isMobile
+                                        ? 3
+                                        : 5, // 3 for mobile, 5 for desktop
+                                    crossAxisSpacing: 15,
+                                    mainAxisSpacing: 15,
+                                    childAspectRatio: 0.5,
                                   ),
                               itemCount: project.screenshots.length,
                               itemBuilder: (context, index) {
@@ -124,7 +125,9 @@ class ProjectDetailView extends StatelessWidget {
                               color: const Color(0xFF190B2D),
                               borderRadius: BorderRadius.circular(20),
                               border: Border.all(
-                                color: const Color(0xFF7127BA).withOpacity(0.2),
+                                color: const Color(
+                                  0xFF7127BA,
+                                ).withValues(alpha: 0.2),
                               ),
                             ),
                             child: SelectableText(
@@ -265,11 +268,14 @@ class ProjectDetailView extends StatelessWidget {
   Widget _buildScreenshotCard(String url, bool isAsset) {
     return Container(
       decoration: BoxDecoration(
+        color: const Color(0xFF190B2D), // Dark background for the card
         borderRadius: BorderRadius.circular(15),
-        border: Border.all(color: const Color(0xFF7127BA).withOpacity(0.3)),
+        border: Border.all(
+          color: const Color(0xFF7127BA).withValues(alpha: 0.3),
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
@@ -279,7 +285,7 @@ class ProjectDetailView extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         child: Image(
           image: isAsset ? AssetImage(url) as ImageProvider : NetworkImage(url),
-          fit: BoxFit.cover,
+          fit: BoxFit.contain, // Contain to show full image without cropping
         ),
       ),
     );
@@ -291,7 +297,9 @@ class ProjectDetailView extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF190B2D),
         borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: const Color(0xFF7127BA).withOpacity(0.5)),
+        border: Border.all(
+          color: const Color(0xFF7127BA).withValues(alpha: 0.5),
+        ),
       ),
       child: Text(
         tech,

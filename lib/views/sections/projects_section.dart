@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:shimmer/shimmer.dart';
 import '../../models/project_model.dart';
 import '../project_detail_view.dart';
 
@@ -17,12 +19,14 @@ class ProjectsSection extends StatelessWidget {
         bool isMobile =
             sizingInformation.isMobile || sizingInformation.isTablet;
         return Container(
+          width: double.infinity,
+          color: Colors.transparent,
           padding: EdgeInsets.symmetric(
-            horizontal: isMobile ? 20 : 100,
+            horizontal: isMobile
+                ? 25
+                : MediaQuery.of(context).size.width * 0.12,
             vertical: 80,
           ),
-          color: Colors.transparent,
-          width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -313,8 +317,8 @@ class _ProjectCardState extends State<ProjectCard> {
           shadows: [
             BoxShadow(
               color: isHovered
-                  ? const Color(0xFF7127BA).withOpacity(0.4)
-                  : Colors.black.withOpacity(0.3),
+                  ? const Color(0xFF7127BA).withValues(alpha: 0.4)
+                  : Colors.black.withValues(alpha: 0.3),
               blurRadius: isHovered ? 30 : 20,
               offset: isHovered ? const Offset(0, 15) : const Offset(0, 10),
             ),
@@ -323,22 +327,28 @@ class _ProjectCardState extends State<ProjectCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              height: 250,
-              width: double.infinity,
-              decoration: ShapeDecoration(
-                image: DecorationImage(
-                  image: widget.project.isAsset
-                      ? AssetImage(widget.project.imageUrl) as ImageProvider
-                      : NetworkImage(widget.project.imageUrl),
-                  fit: BoxFit.cover,
-                ),
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(15),
-                    topRight: Radius.circular(15),
-                  ),
-                ),
+            ClipRRect(
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(15),
+                topRight: Radius.circular(15),
+              ),
+              child: SizedBox(
+                height: 220,
+                width: double.infinity,
+                child: widget.project.isAsset
+                    ? Image.asset(widget.project.imageUrl, fit: BoxFit.cover)
+                    : CachedNetworkImage(
+                        imageUrl: widget.project.imageUrl,
+                        fit: BoxFit.cover,
+                        placeholder: (context, url) => Shimmer.fromColors(
+                          baseColor: const Color(0xFF190B2D),
+                          highlightColor: const Color(0xFF2B0B3A),
+                          child: Container(color: Colors.white),
+                        ),
+                        errorWidget: (context, url, error) => const Center(
+                          child: Icon(Icons.error, color: Colors.white),
+                        ),
+                      ),
               ),
             ),
             Padding(

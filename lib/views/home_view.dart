@@ -116,7 +116,7 @@ class HomeView extends StatelessWidget {
                       Container(
                         width: 1,
                         height: 100,
-                        color: const Color(0xFF7127BA).withOpacity(0.5),
+                        color: const Color(0xFF7127BA).withValues(alpha: 0.5),
                       ),
                     ],
                   ),

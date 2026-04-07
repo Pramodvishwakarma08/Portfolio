@@ -12,12 +12,14 @@ class AboutSection extends StatelessWidget {
         bool isMobile =
             sizingInformation.isMobile || sizingInformation.isTablet;
         return Container(
+          width: double.infinity,
+          color: Colors.transparent,
           padding: EdgeInsets.symmetric(
-            horizontal: isMobile ? 20 : 100,
+            horizontal: isMobile
+                ? 25
+                : MediaQuery.of(context).size.width * 0.12,
             vertical: 80,
           ),
-          color: Colors.transparent,
-          width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -83,7 +85,7 @@ class AboutSection extends StatelessWidget {
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
-          side: BorderSide(color: accentColor.withOpacity(0.3), width: 1),
+          side: BorderSide(color: accentColor.withValues(alpha: 0.3), width: 1),
         ),
       ),
       child: Column(
@@ -109,7 +111,7 @@ class AboutSection extends StatelessWidget {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: accentColor.withOpacity(0.1),
+                      color: accentColor.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(Icons.work, color: accentColor, size: 30),

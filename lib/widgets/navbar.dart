@@ -10,7 +10,10 @@ class Navbar extends StatelessWidget {
   Widget build(BuildContext context) {
     final HomeController controller = Get.find<HomeController>();
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+      padding: EdgeInsets.symmetric(
+        horizontal: MediaQuery.of(context).size.width * 0.12,
+        vertical: 15,
+      ),
       color: const Color(0xFF190B2D),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
