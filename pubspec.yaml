@@ -70,6 +70,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/arrow.png
+    - assets/images/pramod_vishwakarma_cv.pdf
     - assets/images/coupoint/
     - assets/images/kalibrate/
 
