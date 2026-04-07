@@ -148,8 +148,11 @@ class HomeSection extends StatelessWidget {
   Widget _buildResumeButton(bool isMobile) {
     return ElevatedButton.icon(
       onPressed: () {
-        // Link to the resume PDF in assets
-        launchUrl(Uri.parse("assets/images/pramod_vishwakarma_cv.pdf"));
+        // Link to the resume PDF in web folder for direct access
+        launchUrl(
+          Uri.parse("pramod_vishwakarma_cv.pdf"),
+          mode: LaunchMode.externalApplication,
+        );
       },
       icon: const Icon(Icons.download, color: Colors.white),
       label: Text(
