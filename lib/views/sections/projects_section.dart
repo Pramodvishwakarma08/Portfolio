@@ -197,6 +197,7 @@ class ProjectsSection extends StatelessWidget {
                     ),
                     isMobile,
                   ),
+                  /*
                   _projectCard(
                     ProjectModel(
                       title: "Data Tracker",
@@ -229,6 +230,7 @@ class ProjectsSection extends StatelessWidget {
                     ),
                     isMobile,
                   ),
+                  */
                   _projectCard(
                     ProjectModel(
                       title: "Kalibrate",
