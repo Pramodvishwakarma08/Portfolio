@@ -4,6 +4,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class HomeSection extends StatelessWidget {
   const HomeSection({super.key});
@@ -383,24 +384,19 @@ class HomeSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RichText(
-          text: TextSpan(
-            children: [
-              TextSpan(
-                text: "I'm a Flutter Developer.",
-                style: GoogleFonts.plusJakartaSans(
+        SizedBox(
+          height: isMobile ? 40 : 70, // Fixed height to prevent layout jumps
+          child: AnimatedTextKit(
+            repeatForever: true,
+            animatedTexts: [
+              TypewriterAnimatedText(
+                "I'm a Flutter Developer.",
+                textStyle: GoogleFonts.plusJakartaSans(
                   fontSize: isMobile ? 28 : 48,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-              ),
-              TextSpan(
-                text: "|",
-                style: GoogleFonts.plusJakartaSans(
-                  fontSize: isMobile ? 28 : 48,
-                  fontWeight: FontWeight.w300,
-                  color: Colors.white,
-                ),
+                speed: const Duration(milliseconds: 100),
               ),
             ],
           ),
