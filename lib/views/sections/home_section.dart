@@ -29,128 +29,90 @@ class HomeSection extends StatelessWidget {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                FadeInDown(
-                  child: SelectableText(
-                    "Hello! I Am",
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: isMobile ? 18 : 22,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white,
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    // Glow background behind name
+                    FadeIn(
+                      duration: const Duration(seconds: 2),
+                      child: _backgroundGlow(
+                        isMobile ? 300 : 600,
+                        isMobile ? 100 : 200,
+                      ),
                     ),
-                  ),
-                ),
-                const SizedBox(height: 5),
-                FadeInDown(
-                  delay: const Duration(milliseconds: 100),
-                  child: SelectableText(
-                    "Pramod Vishwakarma",
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: isMobile ? 36 : 60,
-                      fontWeight: FontWeight.bold,
-                      color: const Color(0xFF7127BA),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                FadeInLeft(
-                  child: SelectionArea(
-                    child: RichText(
-                      text: TextSpan(
+                    FadeInDown(
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          TextSpan(
-                            text: "Judges a book\nby its ",
+                          SelectableText(
+                            "Pramod Vishwakarma",
                             style: GoogleFonts.plusJakartaSans(
-                              fontSize: isMobile ? 36 : 50,
-                              fontWeight: FontWeight.w400,
+                              fontSize: isMobile ? 40 : 80,
+                              fontWeight: FontWeight.bold,
                               color: Colors.white,
+                              letterSpacing: -1,
                             ),
                           ),
-                          TextSpan(
-                            text: "cover",
-                            style: GoogleFonts.plusJakartaSans(
-                              fontSize: isMobile ? 36 : 50,
-                              fontWeight: FontWeight.w400,
-                              color: const Color(0xFF7127BA),
-                            ),
-                          ),
-                          TextSpan(
-                            text: "...",
-                            style: GoogleFonts.plusJakartaSans(
-                              fontSize: isMobile ? 36 : 50,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white,
+                          const SizedBox(width: 10),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 20),
+                            child: ZoomIn(
+                              delay: const Duration(milliseconds: 500),
+                              child: Text(
+                                "🚀",
+                                style: TextStyle(fontSize: isMobile ? 30 : 50),
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
-                  ),
+                  ],
                 ),
                 const SizedBox(height: 10),
                 FadeInUp(
-                  child: SelectableText(
-                    "Because if the cover does not impress you what else can?",
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: isMobile ? 12 : 14,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white70,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 40),
-                FadeInUp(
-                  delay: const Duration(milliseconds: 200),
-                  child: SelectableText(
-                    "Flutter & Backend Developer",
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: isMobile ? 24 : 32,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                FadeInUp(
-                  delay: const Duration(milliseconds: 400),
-                  child: SizedBox(
-                    width: isMobile ? double.infinity : 700,
-                    child: SelectableText(
-                      "Dedicated and skilled Flutter & Backend Developer (Supabase, Firebase, Node.js) with 3+ years of experience in creating high-performance, engaging apps with clean code architecture.",
-                      style: GoogleFonts.plusJakartaSans(
-                        fontSize: isMobile ? 16 : 18,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.white60,
+                  delay: const Duration(milliseconds: 300),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      if (!isMobile) _buildLine(),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: SelectableText(
+                          "App Developer (Android, iOS, and Web)",
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.plusJakartaSans(
+                            fontSize: isMobile ? 14 : 20,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white,
+                            letterSpacing: 1.2,
+                          ),
+                        ),
                       ),
-                    ),
+                      if (!isMobile) _buildLine(),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 50),
                 FadeInUp(
                   delay: const Duration(milliseconds: 600),
                   child: ElevatedButton.icon(
                     onPressed: _launchWhatsApp,
-                    icon: const Icon(
-                      FontAwesomeIcons.whatsapp,
-                      color: Colors.white,
-                    ),
-                    label: Text(
-                      "Chat on WhatsApp",
-                      style: GoogleFonts.plusJakartaSans(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    icon: const FaIcon(FontAwesomeIcons.whatsapp, size: 18),
+                    label: const Text("Hire Me"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF25D366),
+                      backgroundColor: const Color(0xFF7127BA),
+                      foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 30,
-                        vertical: 15,
+                        vertical: 18,
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
+                      elevation: 10,
+                      shadowColor: const Color(0xFF7127BA).withOpacity(0.5),
                     ),
                   ),
                 ),
@@ -159,6 +121,41 @@ class HomeSection extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+
+  Widget _buildLine() {
+    return Container(
+      width: 80,
+      height: 1,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.transparent,
+            Colors.blue.withOpacity(0.5),
+            Colors.transparent,
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _backgroundGlow(double width, double height) {
+    return Container(
+      width: width,
+      height: height,
+      decoration: const ShapeDecoration(
+        gradient: RadialGradient(
+          center: Alignment(0.5, 0.5),
+          radius: 0.5,
+          colors: [
+            Color(0x66763CAC), // More opacity for home screen glow
+            Color(0x22320E85),
+            Color(0x00000000),
+          ],
+        ),
+        shape: OvalBorder(),
+      ),
     );
   }
 }
