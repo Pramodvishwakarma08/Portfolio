@@ -8,5 +8,7 @@
   ],
   "routes": [
     { "src": "/.*", "dest": "/" }
-  ]
+  ],
+  "buildCommand": "bash flutter_web_build.sh",
+  "outputDirectory": "build/web"
 }

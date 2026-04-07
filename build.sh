@@ -1,13 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
-# Clone Flutter stable branch
+# Install Flutter (stable)
 git clone https://github.com/flutter/flutter.git -b stable
+export PATH="$PWD/flutter/bin:$PATH"
 
-# Set path
-export PATH="$PATH:`pwd`/flutter/bin"
+flutter config --enable-web
+flutter --version
 
-# Run flutter doctor to ensure environment is set up
-flutter doctor
-
-# Build web release
+flutter pub get
 flutter build web --release
+
+# Vercel will serve from build/web
