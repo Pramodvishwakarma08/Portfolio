@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:get/get.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -63,7 +64,16 @@ class ContactSection extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.snackbar(
+                            "Message Sent",
+                            "Thank you for reaching out! I'll get back to you soon.",
+                            snackPosition: SnackPosition.BOTTOM,
+                            backgroundColor: const Color(0xFF7127BA),
+                            colorText: Colors.white,
+                            margin: const EdgeInsets.all(20),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF7127BA),
                           padding: const EdgeInsets.symmetric(vertical: 20),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../models/project_model.dart';
 import '../project_detail_view.dart';
 
@@ -43,7 +45,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Discount Coupon Marketplace Platform connecting users with local businesses.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoin_main.png",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -74,7 +76,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Field Operations Management System (Agent Portal) for streamlined observation reporting.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFireMain.png",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -89,12 +91,12 @@ class ProjectsSection extends StatelessWidget {
                         "Multi-platform CRM integration (HubSpot, Lob API)",
                       ],
                       screenshots: [
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_2.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_3.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_4.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_5.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_6.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFire01.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFire02.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFire03.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFire04.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFire05.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/leadFire06.png",
                       ],
                     ),
                     isMobile,
@@ -105,7 +107,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Cloud-based personalized college guidance system for underserved students.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/College_Thriver_main.png",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -121,12 +123,12 @@ class ProjectsSection extends StatelessWidget {
                         "Personalized college guidance system for educational success",
                       ],
                       screenshots: [
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_2.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_3.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_4.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_5.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_6.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/02/b5/8f02b5d9-8fca-e292-488b-0ff5a2007496/df07f2cc-1c7d-4b1e-913d-573c101bd467_114.png/230x499bb.webp",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/d8/a1/73d8a19a-8e35-d83e-38a5-a95caa5c4c28/d21cd074-ac37-4386-910c-2fb87eb48cd9_116.png/230x499bb.webp",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b2/a9/56/b2a95602-9c1a-5e9e-eeb1-531a265a73ad/46559668-c48d-4ef4-bf78-4c041e0b9b6e_115.png/230x499bb.webp",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/d3/17/aed31702-6982-eb55-56bd-61ea03ab3b3a/b1978133-4eab-4c01-ba92-de160c9c8917_117.png/230x499bb.webp",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/90/64/539064ba-75f0-0ddd-1eb7-a99a4ad1adb1/30b67475-aa8f-469f-a5af-9e13f16adba1_iPad_U00282_U0029.jpg/528x704bb.webp",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/79/3d/ee/793deee8-0d5c-b3a8-a1df-042514cc7a7c/fb05ec74-efd1-43c0-937e-fb151e61d304_iPad_U00284_U0029.jpg/528x704bb.webp",
                       ],
                     ),
                     isMobile,
@@ -137,7 +139,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Mobile app for reporting lost/stolen items like phones, bikes, and cars.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/Secure_Point_main.png",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -153,12 +155,12 @@ class ProjectsSection extends StatelessWidget {
                         "Recovery assistance for lost items",
                       ],
                       screenshots: [
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_2.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_3.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_4.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_5.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_6.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/secure_point_1.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/secure_point_2.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/secure_point_3.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/secure_point_4.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/secure_point_5.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/secure_point_6.png",
                       ],
                     ),
                     isMobile,
@@ -169,7 +171,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Social media app with real-time messaging, profiles, and post sharing.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_main.png",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -185,12 +187,12 @@ class ProjectsSection extends StatelessWidget {
                         "Deep linking for post sharing",
                       ],
                       screenshots: [
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_2.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_3.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_4.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_5.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_6.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_1.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_2.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_3.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_4.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_5.png",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_6.png",
                       ],
                     ),
                     isMobile,
@@ -269,79 +271,145 @@ class ProjectsSection extends StatelessWidget {
   }
 
   Widget _projectCard(ProjectModel project, bool isMobile) {
-    return Container(
-      width: isMobile ? double.infinity : 450,
-      decoration: ShapeDecoration(
-        color: const Color(0xFF2B0B3A),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        shadows: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.3),
-            blurRadius: 20,
-            offset: const Offset(0, 10),
+    return ProjectCard(project: project, isMobile: isMobile);
+  }
+}
+
+class ProjectCard extends StatefulWidget {
+  final ProjectModel project;
+  final bool isMobile;
+
+  const ProjectCard({super.key, required this.project, required this.isMobile});
+
+  @override
+  State<ProjectCard> createState() => _ProjectCardState();
+}
+
+class _ProjectCardState extends State<ProjectCard> {
+  bool isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => isHovered = true),
+      onExit: (_) => setState(() => isHovered = false),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 300),
+        width: widget.isMobile ? double.infinity : 350,
+        transform: isHovered
+            ? (Matrix4.identity()..translate(0, -10))
+            : Matrix4.identity(),
+        decoration: ShapeDecoration(
+          color: const Color(0xFF2B0B3A),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+            side: BorderSide(
+              color: isHovered ? const Color(0xFF7127BA) : Colors.transparent,
+              width: 2,
+            ),
           ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 250,
-            width: double.infinity,
-            decoration: ShapeDecoration(
-              image: DecorationImage(
-                image: project.isAsset
-                    ? AssetImage(project.imageUrl) as ImageProvider
-                    : NetworkImage(project.imageUrl),
-                fit: BoxFit.cover,
-              ),
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(15),
-                  topRight: Radius.circular(15),
+          shadows: [
+            BoxShadow(
+              color: isHovered
+                  ? const Color(0xFF7127BA).withOpacity(0.4)
+                  : Colors.black.withOpacity(0.3),
+              blurRadius: isHovered ? 30 : 20,
+              offset: isHovered ? const Offset(0, 15) : const Offset(0, 10),
+            ),
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 250,
+              width: double.infinity,
+              decoration: ShapeDecoration(
+                image: DecorationImage(
+                  image: widget.project.isAsset
+                      ? AssetImage(widget.project.imageUrl) as ImageProvider
+                      : NetworkImage(widget.project.imageUrl),
+                  fit: BoxFit.cover,
+                ),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(25),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SelectableText(
-                  project.title,
-                  style: GoogleFonts.plusJakartaSans(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                SelectableText(
-                  project.description,
-                  style: GoogleFonts.plusJakartaSans(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.white70,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                TextButton(
-                  onPressed: () =>
-                      Get.to(() => ProjectDetailView(project: project)),
-                  child: Text(
-                    "VIEW PROJECT →",
+            Padding(
+              padding: const EdgeInsets.all(25),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SelectableText(
+                    widget.project.title,
                     style: GoogleFonts.plusJakartaSans(
-                      fontSize: 14,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: const Color(0xFF7127BA),
+                      color: Colors.white,
                     ),
                   ),
-                ),
-              ],
+                  const SizedBox(height: 10),
+                  SelectableText(
+                    widget.project.description,
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white70,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      TextButton(
+                        onPressed: () => Get.to(
+                          () => ProjectDetailView(project: widget.project),
+                        ),
+                        child: Text(
+                          "VIEW PROJECT →",
+                          style: GoogleFonts.plusJakartaSans(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: const Color(0xFF7127BA),
+                          ),
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          if (widget.project.androidLink != null)
+                            IconButton(
+                              onPressed: () => launchUrl(
+                                Uri.parse(widget.project.androidLink!),
+                              ),
+                              icon: const FaIcon(
+                                FontAwesomeIcons.android,
+                                size: 18,
+                                color: Colors.white70,
+                              ),
+                            ),
+                          if (widget.project.iosLink != null)
+                            IconButton(
+                              onPressed: () =>
+                                  launchUrl(Uri.parse(widget.project.iosLink!)),
+                              icon: const FaIcon(
+                                FontAwesomeIcons.apple,
+                                size: 18,
+                                color: Colors.white70,
+                              ),
+                            ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

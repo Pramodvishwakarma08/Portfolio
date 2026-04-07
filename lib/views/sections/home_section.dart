@@ -42,30 +42,37 @@ class HomeSection extends StatelessWidget {
                       ),
                     ),
                     FadeInDown(
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          SelectableText(
-                            "Pramod Vishwakarma",
-                            style: GoogleFonts.plusJakartaSans(
-                              fontSize: isMobile ? 40 : 80,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              letterSpacing: -1,
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 20),
-                            child: ZoomIn(
-                              delay: const Duration(milliseconds: 500),
-                              child: Text(
-                                "🚀",
-                                style: TextStyle(fontSize: isMobile ? 30 : 50),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Wrap(
+                          alignment: WrapAlignment.center,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          children: [
+                            SelectableText(
+                              "Pramod Vishwakarma",
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.plusJakartaSans(
+                                fontSize: isMobile ? 32 : 80,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                letterSpacing: -1,
                               ),
                             ),
-                          ),
-                        ],
+                            const SizedBox(width: 10),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: ZoomIn(
+                                delay: const Duration(milliseconds: 500),
+                                child: Text(
+                                  "🚀",
+                                  style: TextStyle(
+                                    fontSize: isMobile ? 24 : 50,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
@@ -97,23 +104,49 @@ class HomeSection extends StatelessWidget {
                 const SizedBox(height: 50),
                 FadeInUp(
                   delay: const Duration(milliseconds: 600),
-                  child: ElevatedButton.icon(
-                    onPressed: _launchWhatsApp,
-                    icon: const FaIcon(FontAwesomeIcons.whatsapp, size: 18),
-                    label: const Text("Hire Me"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF7127BA),
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 30,
-                        vertical: 18,
+                  child: Wrap(
+                    alignment: WrapAlignment.center,
+                    spacing: 20,
+                    runSpacing: 20,
+                    children: [
+                      ElevatedButton.icon(
+                        onPressed: _launchWhatsApp,
+                        icon: const FaIcon(FontAwesomeIcons.whatsapp, size: 18),
+                        label: const Text("Hire Me"),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF7127BA),
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 30,
+                            vertical: 18,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          elevation: 10,
+                          shadowColor: const Color(0xFF7127BA).withOpacity(0.5),
+                        ),
                       ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
+                      OutlinedButton.icon(
+                        onPressed: () {
+                          // TODO: Replace with actual CV link
+                          launchUrl(Uri.parse("https://your-resume-link.com"));
+                        },
+                        icon: const Icon(Icons.download, size: 20),
+                        label: const Text("Download CV"),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 30,
+                            vertical: 18,
+                          ),
+                          side: const BorderSide(color: Color(0xFF7127BA)),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
                       ),
-                      elevation: 10,
-                      shadowColor: const Color(0xFF7127BA).withOpacity(0.5),
-                    ),
+                    ],
                   ),
                 ),
               ],

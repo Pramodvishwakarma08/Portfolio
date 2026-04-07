@@ -10,6 +10,9 @@ import 'sections/about_section.dart';
 import 'sections/skills_section.dart';
 import 'sections/projects_section.dart';
 import 'sections/contact_section.dart';
+import 'sections/footer_section.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeView extends StatelessWidget {
   final HomeController controller = Get.put(HomeController());
@@ -85,13 +88,50 @@ class HomeView extends StatelessWidget {
                     SkillsSection(key: controller.skillsKey),
                     ProjectsSection(key: controller.projectsKey),
                     ContactSection(key: controller.contactKey),
+                    const FooterSection(),
                   ],
                 ),
               ),
+              if (!sizingInformation.isMobile && !sizingInformation.isTablet)
+                Positioned(
+                  left: 40,
+                  bottom: 0,
+                  child: Column(
+                    children: [
+                      _socialSidebarIcon(
+                        FontAwesomeIcons.github,
+                        "https://github.com/Pramodvishwakarma08",
+                      ),
+                      const SizedBox(height: 20),
+                      _socialSidebarIcon(
+                        FontAwesomeIcons.linkedin,
+                        "https://www.linkedin.com/in/pramod-vishwakarma-a743b7247?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+                      ),
+                      const SizedBox(height: 20),
+                      _socialSidebarIcon(
+                        FontAwesomeIcons.instagram,
+                        "https://www.instagram.com/pramodvishwakarma08/",
+                      ),
+                      const SizedBox(height: 30),
+                      Container(
+                        width: 1,
+                        height: 100,
+                        color: const Color(0xFF7127BA).withOpacity(0.5),
+                      ),
+                    ],
+                  ),
+                ),
             ],
           ),
         );
       },
+    );
+  }
+
+  Widget _socialSidebarIcon(IconData icon, String url) {
+    return InkWell(
+      onTap: () => launchUrl(Uri.parse(url)),
+      child: FaIcon(icon, color: Colors.white70, size: 22),
     );
   }
 

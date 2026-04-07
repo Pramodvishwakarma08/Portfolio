@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SkillsSection extends StatelessWidget {
   const SkillsSection({super.key});
@@ -35,19 +36,35 @@ class SkillsSection extends StatelessWidget {
                   spacing: 20,
                   runSpacing: 20,
                   children: [
-                    _skillChip("Flutter", isMobile),
-                    _skillChip("Dart", isMobile),
-                    _skillChip("GetX", isMobile),
-                    _skillChip("Bloc", isMobile),
-                    _skillChip("Node.js", isMobile),
-                    _skillChip("Firebase", isMobile),
-                    _skillChip("Supabase", isMobile),
-                    _skillChip("Git/Github", isMobile),
-                    _skillChip("CI-CD Pipeline", isMobile),
-                    _skillChip("Stripe", isMobile),
-                    _skillChip("Google Maps API", isMobile),
-                    _skillChip("Socket.io", isMobile),
-                    _skillChip("Dependency Injection (GetIt)", isMobile),
+                    _skillChip(
+                      "Flutter",
+                      FontAwesomeIcons.mobileScreenButton,
+                      isMobile,
+                    ),
+                    _skillChip("Dart", Icons.code, isMobile),
+                    _skillChip("GetX", Icons.bolt, isMobile),
+                    _skillChip("Bloc", Icons.layers, isMobile),
+                    _skillChip("Node.js", FontAwesomeIcons.nodeJs, isMobile),
+                    _skillChip("Firebase", FontAwesomeIcons.fire, isMobile),
+                    _skillChip("Supabase", FontAwesomeIcons.database, isMobile),
+                    _skillChip("Git/Github", FontAwesomeIcons.github, isMobile),
+                    _skillChip(
+                      "CI-CD Pipeline",
+                      FontAwesomeIcons.rocket,
+                      isMobile,
+                    ),
+                    _skillChip("Stripe", FontAwesomeIcons.stripe, isMobile),
+                    _skillChip(
+                      "Google Maps API",
+                      FontAwesomeIcons.mapLocationDot,
+                      isMobile,
+                    ),
+                    _skillChip("Socket.io", Icons.sync, isMobile),
+                    _skillChip(
+                      "Dependency Injection",
+                      Icons.extension,
+                      isMobile,
+                    ),
                   ],
                 ),
               ),
@@ -88,21 +105,35 @@ class SkillsSection extends StatelessWidget {
     );
   }
 
-  Widget _skillChip(String label, bool isMobile) {
+  Widget _skillChip(String label, IconData icon, bool isMobile) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       decoration: BoxDecoration(
         color: const Color(0xFF190B2D),
-        borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: const Color(0xFF7127BA).withOpacity(0.5)),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFF7127BA).withOpacity(0.3)),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF7127BA).withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
-      child: Text(
-        label,
-        style: GoogleFonts.plusJakartaSans(
-          fontSize: isMobile ? 14 : 16,
-          fontWeight: FontWeight.w600,
-          color: Colors.white,
-        ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: const Color(0xFF7127BA), size: isMobile ? 18 : 22),
+          const SizedBox(width: 12),
+          Text(
+            label,
+            style: GoogleFonts.plusJakartaSans(
+              fontSize: isMobile ? 14 : 16,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+            ),
+          ),
+        ],
       ),
     );
   }
