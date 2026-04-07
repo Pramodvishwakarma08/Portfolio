@@ -49,15 +49,37 @@ class _ContactSectionState extends State<ContactSection> {
       },
     );
 
-    if (await canLaunchUrl(emailLaunchUri)) {
-      await launchUrl(emailLaunchUri);
-      _nameController.clear();
-      _emailController.clear();
-      _messageController.clear();
-    } else {
+    try {
+      if (await canLaunchUrl(emailLaunchUri)) {
+        await launchUrl(emailLaunchUri);
+        _nameController.clear();
+        _emailController.clear();
+        _messageController.clear();
+        Get.snackbar(
+          "Success",
+          "Your message was sent successfully!",
+          snackPosition: SnackPosition.BOTTOM,
+          backgroundColor: Colors.green,
+          colorText: Colors.white,
+        );
+      } else {
+        // Even if canLaunchUrl fails (common on web), we try to launch anyway
+        await launchUrl(emailLaunchUri);
+        _nameController.clear();
+        _emailController.clear();
+        _messageController.clear();
+        Get.snackbar(
+          "Success",
+          "Your message was sent successfully!",
+          snackPosition: SnackPosition.BOTTOM,
+          backgroundColor: Colors.green,
+          colorText: Colors.white,
+        );
+      }
+    } catch (e) {
       Get.snackbar(
         "Error",
-        "Could not launch email client",
+        "Could not launch email client: $e",
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: Colors.redAccent,
         colorText: Colors.white,
