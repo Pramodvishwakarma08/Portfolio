@@ -105,7 +105,7 @@ class ProjectsSection extends StatelessWidget {
                         "https://play-lh.googleusercontent.com/tGHYa-tk5FrbcC1Wuks56QxEVyF0hYhysOzD52lj8eDUGyx2mq0HqhrSgA046mT0Y_z17MZzIaE8vmTH5WjNRA=w526-h296-rw",
                       ],
                       androidLink:
-                          "https://play.google.com/store/apps/details?id=com.wearezumi",
+                          "https://play.google.com/store/apps/details?id=com.zumi.app.zumi_app",
                     ),
                     isMobile,
                   ),
