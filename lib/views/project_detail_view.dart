@@ -285,7 +285,7 @@ class ProjectDetailView extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         child: Image(
           image: isAsset ? AssetImage(url) as ImageProvider : NetworkImage(url),
-          fit: BoxFit.contain, // Contain to show full image without cropping
+          fit: BoxFit.cover,
         ),
       ),
     );
