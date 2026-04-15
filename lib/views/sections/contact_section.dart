@@ -117,7 +117,7 @@ class _ContactSectionState extends State<ContactSection> {
               SizedBox(
                 width: isMobile ? double.infinity : 800,
                 child: SelectableText(
-                  "I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect.\n\npramod00106@gmail.com | +91 9111177049\nKalindi Gold Diamond Sector, Indore",
+                  "I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect.\n\npramod002027@gmail.com | +91 9111177049\nKalindi Gold Diamond Sector, Indore",
                   style: GoogleFonts.plusJakartaSans(
                     fontSize: isMobile ? 16 : 18,
                     fontWeight: FontWeight.w400,
