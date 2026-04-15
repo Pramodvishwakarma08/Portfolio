@@ -78,7 +78,7 @@ class ProjectsSection extends StatelessWidget {
                     ProjectModel(
                       title: "zumi - pet care",
                       description:
-                          "zumi – Professional Pet Services at Home connecting pet parents with experienced Registered Veterinary Nurses (RVNs) across the UK for non-clinical pet services delivered in the comfort of your own home.",
+                          "zumi – Professional Pet Services at Home connecting pet parents with experienced Registered Veterinary Nurses (RVNs) across the UK for non-clinical pet services delivered in the comfort of your own home. Over 10,000+ downloads!",
                       imageUrl:
                           "https://play-lh.googleusercontent.com/5SY6iwAQv3-uZUlZL3NOsOI-5bHXlkCXPSZId0mqEAVVquFuAA2PQBupI5gwoMVagdq2=w240-h480-rw",
                       isAsset: false,
