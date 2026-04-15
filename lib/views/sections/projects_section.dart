@@ -99,9 +99,9 @@ class ProjectsSection extends StatelessWidget {
                       screenshots: [
                         "https://play-lh.googleusercontent.com/4r-u1noaA8LrxbenPlvzQd5in9e2pDjVTa2Wpa7aWE2K7E6UoRuANpYZiDjnCdnci0cTe8aXzuUYdoiGiOI1R60=w2560-h1440-rw",
                         "https://play-lh.googleusercontent.com/ubDqhNX_P2ZFWdy6ASeN5MvIbmbWOxYJ9WGdOSrCcWzEan-_MXnPT8gW2ZV3-L-lXLBMs5r-RHP9izRqxoeT1g=w2560-h1440-rw",
-                        "https://play-lh.googleusercontent.com/elGnkdaQrfYKtrh5UIsucBu6qMwOSAWBDfLgfHdexrSSg7Cxcn75ki1fZ1GhzBQwxAUHM5IafO7EXKsRyHpDASo=w526-h296-rw",
-                        "https://play-lh.googleusercontent.com/5AMxtL9kqD9I4jGLP2uGgxKtafUHdzw1b6XmCUXoAKcYuTxZjoofAAbzn49w-7OVJ1RkNus1_Oq2gfeop_2Hw4Q=w526-h296-rw",
-                        "https://play-lh.googleusercontent.com/ECEiyi22Aw1ezQGUiKcdJZJGY4_T4ly3GJaGflVBt4aLY_8dj9kiQ_mtf6HMJbWwO138ZtM7QO7iD-RlkSqk=w526-h296-rw",
+                        "https://play-lh.googleusercontent.com/elGnkdaQrfYKtrh5UIsucBu6qMwOSAWBDfLgfHdexrSSg7Cxcn75ki1fZ1GhzBQwxAUHM5IafO7EXKsRyHpDASo=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/5AMxtL9kqD9I4jGLP2uGgxKtafUHdzw1b6XmCUXoAKcYuTxZjoofAAbzn49w-7OVJ1RkNus1_Oq2gfeop_2Hw4Q=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/ECEiyi22Aw1ezQGUiKcdJZJGY4_T4ly3GJaGflVBt4aLY_8dj9kiQ_mtf6HMJbWwO138ZtM7QO7iD-RlkSqk=w2560-h1440-rw",
                         "https://play-lh.googleusercontent.com/tGHYa-tk5FrbcC1Wuks56QxEVyF0hYhysOzD52lj8eDUGyx2mq0HqhrSgA046mT0Y_z17MZzIaE8vmTH5WjNRA=w526-h296-rw",
                       ],
                       androidLink:
