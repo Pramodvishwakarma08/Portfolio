@@ -76,6 +76,41 @@ class ProjectsSection extends StatelessWidget {
                   ),
                   _projectCard(
                     ProjectModel(
+                      title: "zumi - pet care",
+                      description:
+                          "zumi – Professional Pet Services at Home connecting pet parents with experienced Registered Veterinary Nurses (RVNs) across the UK for non-clinical pet services delivered in the comfort of your own home.",
+                      imageUrl:
+                          "https://play-lh.googleusercontent.com/5SY6iwAQv3-uZUlZL3NOsOI-5bHXlkCXPSZId0mqEAVVquFuAA2PQBupI5gwoMVagdq2=w240-h480-rw",
+                      isAsset: false,
+                      techStack: [
+                        "Flutter",
+                        "Firebase",
+                        "GetX",
+                        "Google Maps API",
+                        "Worldpay Payment Integration",
+                      ],
+                      keyFeatures: [
+                        "Connect pet parents with experienced Registered Veterinary Nurses (RVNs)",
+                        "Wide range of services: nail clips, grooming, dog walking, senior pet care, etc.",
+                        "Secure in-app messaging and booking management with reminders",
+                        "Safe and secure payment via Worldpay",
+                        "Shop for pet toys, treats, essentials and make optional in-app donations",
+                      ],
+                      screenshots: [
+                        "https://play-lh.googleusercontent.com/4r-u1noaA8LrxbenPlvzQd5in9e2pDjVTa2Wpa7aWE2K7E6UoRuANpYZiDjnCdnci0cTe8aXzuUYdoiGiOI1R60=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/ubDqhNX_P2ZFWdy6ASeN5MvIbmbWOxYJ9WGdOSrCcWzEan-_MXnPT8gW2ZV3-L-lXLBMs5r-RHP9izRqxoeT1g=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/elGnkdaQrfYKtrh5UIsucBu6qMwOSAWBDfLgfHdexrSSg7Cxcn75ki1fZ1GhzBQwxAUHM5IafO7EXKsRyHpDASo=w526-h296-rw",
+                        "https://play-lh.googleusercontent.com/5AMxtL9kqD9I4jGLP2uGgxKtafUHdzw1b6XmCUXoAKcYuTxZjoofAAbzn49w-7OVJ1RkNus1_Oq2gfeop_2Hw4Q=w526-h296-rw",
+                        "https://play-lh.googleusercontent.com/ECEiyi22Aw1ezQGUiKcdJZJGY4_T4ly3GJaGflVBt4aLY_8dj9kiQ_mtf6HMJbWwO138ZtM7QO7iD-RlkSqk=w526-h296-rw",
+                        "https://play-lh.googleusercontent.com/tGHYa-tk5FrbcC1Wuks56QxEVyF0hYhysOzD52lj8eDUGyx2mq0HqhrSgA046mT0Y_z17MZzIaE8vmTH5WjNRA=w526-h296-rw",
+                      ],
+                      androidLink:
+                          "https://play.google.com/store/apps/details?id=com.wearezumi",
+                    ),
+                    isMobile,
+                  ),
+                  _projectCard(
+                    ProjectModel(
                       title: "LeadFire Pro",
                       description:
                           "Field Operations Management System (Agent Portal) for streamlined observation reporting.",
