@@ -42,7 +42,7 @@ class _ContactSectionState extends State<ContactSection> {
 
     final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
-      path: 'pramod00106@gmail.com',
+      path: 'pramod002027@gmail.com',
       queryParameters: {
         'subject': 'Portfolio Inquiry from $name',
         'body': 'Name: $name\nEmail: $email\n\nMessage:\n$message',
