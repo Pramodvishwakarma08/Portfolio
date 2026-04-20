@@ -71,6 +71,8 @@ class ProjectsSection extends StatelessWidget {
                         "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_5.png",
                         "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_6.png",
                       ],
+                      androidLink:
+                          "https://play.google.com/store/apps/details?id=com.coupoint.app&pcampaignid=web_share",
                     ),
                     isMobile,
                   ),
