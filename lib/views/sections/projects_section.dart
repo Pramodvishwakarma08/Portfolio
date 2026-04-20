@@ -142,6 +142,8 @@ class ProjectsSection extends StatelessWidget {
                       ],
                       androidLink:
                           "https://play.google.com/store/apps/details?id=com.leadfire.app&pcampaignid=web_share",
+                      iosLink:
+                          "https://apps.apple.com/us/app/leadfire-pro/id6752554427",
                     ),
                     isMobile,
                   ),
@@ -174,7 +176,8 @@ class ProjectsSection extends StatelessWidget {
                         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/90/64/539064ba-75f0-0ddd-1eb7-a99a4ad1adb1/30b67475-aa8f-469f-a5af-9e13f16adba1_iPad_U00282_U0029.jpg/528x704bb.webp",
                         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/79/3d/ee/793deee8-0d5c-b3a8-a1df-042514cc7a7c/fb05ec74-efd1-43c0-937e-fb151e61d304_iPad_U00284_U0029.jpg/528x704bb.webp",
                       ],
-                      iosLink: "https://apps.apple.com/us/app/college-thriver/id6504110095",
+                      iosLink:
+                          "https://apps.apple.com/us/app/college-thriver/id6504110095",
                     ),
                     isMobile,
                   ),
