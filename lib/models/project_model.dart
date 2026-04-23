@@ -8,6 +8,7 @@ class ProjectModel {
   final List<String> screenshots;
   final String? androidLink;
   final String? iosLink;
+  final String? websiteLink;
 
   ProjectModel({
     required this.title,
@@ -19,5 +20,6 @@ class ProjectModel {
     this.screenshots = const [],
     this.androidLink,
     this.iosLink,
+    this.websiteLink,
   });
 }

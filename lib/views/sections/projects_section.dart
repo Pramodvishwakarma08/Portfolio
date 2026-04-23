@@ -31,7 +31,7 @@ class ProjectsSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Selected Projects",
+                "Featured Projects",
                 style: GoogleFonts.plusJakartaSans(
                   fontSize: isMobile ? 32 : 40,
                   fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Discount Coupon Marketplace Platform connecting users with local businesses.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoin_main.png",
+                          "https://play-lh.googleusercontent.com/pcXE0UI0g07lPirpL4q_ni9ECImZWPHNWtCvXLSr7nf_45Ep2nRIGKhl8nOQmcOUKl_R_IE4fck6UgW4Q9BK3g=w2560-h1440-rw",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -64,15 +64,15 @@ class ProjectsSection extends StatelessWidget {
                         "User wallet system with coupon tracking and push notifications",
                       ],
                       screenshots: [
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_1.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_2.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_3.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_4.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_5.png",
-                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/coupoint_6.png",
+                        "https://play-lh.googleusercontent.com/pcXE0UI0g07lPirpL4q_ni9ECImZWPHNWtCvXLSr7nf_45Ep2nRIGKhl8nOQmcOUKl_R_IE4fck6UgW4Q9BK3g=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/QGiuky7dJ9hROoWCnWr3pQdgb4BLx_hFKgYkCSYqkJOvnGsMaTKMcZZIlbu1vDXTeH932pS_LxnfXo2xUYUd=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/KNe93hs7n6mSxCwqj2dIr64vlESfyqVWkV-eVasjeoVgTnXhAsuD36-dcLlMi98xvjmKwvRcfgER-S8LoB3eciI=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/B2U4EiPvXj6RmPZ2bKNYbVD303xc78UdWiRwWvAFvHa_VXIm9P19tCaW0QXJDfjHG_4S3mkF2BDlhGJhZGjsrJg=w2560-h1440-rw",
+                        "https://play-lh.googleusercontent.com/OrO_ZyDmnccEDGXbbmiT07EyL577QzpS48jzV8Q_XmeC78PUx6v4CH1lBxnCIxZbP-YKEmKeMo4u5ykRwYVbSQ=w2560-h1440-rw",
                       ],
                       androidLink:
                           "https://play.google.com/store/apps/details?id=com.coupoint.app&pcampaignid=web_share",
+                      websiteLink: "https://coupoint.ca/",
                     ),
                     isMobile,
                   ),
@@ -108,6 +108,7 @@ class ProjectsSection extends StatelessWidget {
                       ],
                       androidLink:
                           "https://play.google.com/store/apps/details?id=com.zumi.app.zumi_app",
+                      websiteLink: "https://zumi.app/",
                     ),
                     isMobile,
                   ),
@@ -117,7 +118,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "Ignite your business growth with LeadFire Pro - the all-in-one field and lead management app built for service professionals, designed for contractors, field agents, sales people, and business owners who need a faster, smarter way to manage leads, jobs, and customer communications.",
                       imageUrl:
-                          "https://play-lh.googleusercontent.com/vR31cuyloKspMvCslrXUk6s91cRRd9MQjYjfVltLAMsfFCvAuszCiHafL7cDwEin72SCoDQCLR44sBVmXF5gmg=w2560-h1440-rw",
+                          "https://play-lh.googleusercontent.com/o-_2_Wa1Dy13fLk94kjmjEjuMogiO7YAWVJOxmuB7F4914Mor3ByBUTXgsOD5xJ8bNtzrRZXc8dHnq5qcU1K3g=w416-h235-rw",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -146,6 +147,7 @@ class ProjectsSection extends StatelessWidget {
                           "https://play.google.com/store/apps/details?id=com.leadfire.app&pcampaignid=web_share",
                       iosLink:
                           "https://apps.apple.com/us/app/leadfire-pro/id6752554427",
+                      websiteLink: "https://leadfirepro.com/",
                     ),
                     isMobile,
                   ),
@@ -180,6 +182,7 @@ class ProjectsSection extends StatelessWidget {
                       ],
                       iosLink:
                           "https://apps.apple.com/us/app/college-thriver/id6504110095",
+                      websiteLink: "https://college-thriver.org/",
                     ),
                     isMobile,
                   ),
@@ -215,6 +218,7 @@ class ProjectsSection extends StatelessWidget {
                       ],
                       androidLink:
                           "https://play.google.com/store/apps/details?id=com.securpoint.securpoint&pcampaignid=web_share",
+                      websiteLink: "https://securpoint.app/",
                     ),
                     isMobile,
                   ),
@@ -247,6 +251,7 @@ class ProjectsSection extends StatelessWidget {
                         "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_5.png",
                         "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/frenly_6.png",
                       ],
+                      websiteLink: "https://frenly.app/",
                     ),
                     isMobile,
                   ),
@@ -313,6 +318,7 @@ class ProjectsSection extends StatelessWidget {
                         "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/Kalibrate5.png",
                         "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/Kalibrate6.png",
                       ],
+                      websiteLink: "https://kalibrate.app/",
                     ),
                     isMobile,
                   ),
@@ -348,128 +354,225 @@ class _ProjectCardState extends State<ProjectCard> {
     return MouseRegion(
       onEnter: (_) => setState(() => isHovered = true),
       onExit: (_) => setState(() => isHovered = false),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        width: widget.isMobile ? double.infinity : 350,
-        transform: isHovered
-            ? (Matrix4.identity()..translate(0, -10))
-            : Matrix4.identity(),
-        decoration: ShapeDecoration(
-          color: const Color(0xFF2B0B3A),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
-            side: BorderSide(
-              color: isHovered ? const Color(0xFF7127BA) : Colors.transparent,
-              width: 2,
-            ),
-          ),
-          shadows: [
-            BoxShadow(
-              color: isHovered
-                  ? const Color(0xFF7127BA).withValues(alpha: 0.4)
-                  : Colors.black.withValues(alpha: 0.3),
-              blurRadius: isHovered ? 30 : 20,
-              offset: isHovered ? const Offset(0, 15) : const Offset(0, 10),
-            ),
-          ],
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () => Get.to(
+          () => ProjectDetailView(project: widget.project),
+          transition: Transition.rightToLeftWithFade,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ClipRRect(
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(15),
-                topRight: Radius.circular(15),
-              ),
-              child: SizedBox(
-                height: 220,
-                width: double.infinity,
-                child: widget.project.isAsset
-                    ? Image.asset(widget.project.imageUrl, fit: BoxFit.cover)
-                    : CachedNetworkImage(
-                        imageUrl: widget.project.imageUrl,
-                        fit: BoxFit.cover,
-                        placeholder: (context, url) => Shimmer.fromColors(
-                          baseColor: const Color(0xFF190B2D),
-                          highlightColor: const Color(0xFF2B0B3A),
-                          child: Container(color: Colors.white),
-                        ),
-                        errorWidget: (context, url, error) => const Center(
-                          child: Icon(Icons.error, color: Colors.white),
-                        ),
-                      ),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 300),
+          width: widget.isMobile ? double.infinity : 350,
+          height:
+              460, // Increased slightly to ensure buttons have room at the bottom
+          transform: isHovered
+              ? (Matrix4.identity()..translate(0.0, -12.0))
+              : Matrix4.identity(),
+          decoration: ShapeDecoration(
+            color: const Color(0xFF1A0B2E),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: BorderSide(
+                color: isHovered
+                    ? const Color(0xFF7127BA).withValues(alpha: 0.6)
+                    : Colors.white.withValues(alpha: 0.05),
+                width: 1.5,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(25),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            shadows: [
+              BoxShadow(
+                color: isHovered
+                    ? const Color(0xFF7127BA).withValues(alpha: 0.3)
+                    : Colors.black.withValues(alpha: 0.4),
+                blurRadius: isHovered ? 40 : 25,
+                offset: isHovered ? const Offset(0, 20) : const Offset(0, 10),
+              ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Stack(
                 children: [
-                  SelectableText(
-                    widget.project.title,
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                  ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                    ),
+                    child: SizedBox(
+                      height: 180,
+                      width: double.infinity,
+                      child: widget.project.isAsset
+                          ? Image.asset(
+                              widget.project.imageUrl,
+                              fit: BoxFit.cover,
+                            )
+                          : CachedNetworkImage(
+                              imageUrl: widget.project.imageUrl,
+                              fit: BoxFit.cover,
+                              placeholder: (context, url) => Shimmer.fromColors(
+                                baseColor: const Color(0xFF190B2D),
+                                highlightColor: const Color(0xFF2B0B3A),
+                                child: Container(color: Colors.white),
+                              ),
+                              errorWidget: (context, url, error) =>
+                                  const Center(
+                                    child: Icon(
+                                      Icons.error,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                            ),
                     ),
                   ),
-                  const SizedBox(height: 10),
-                  SelectableText(
-                    widget.project.description,
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white70,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      TextButton(
-                        onPressed: () => Get.to(
-                          () => ProjectDetailView(project: widget.project),
-                        ),
-                        child: Text(
-                          "VIEW PROJECT →",
-                          style: GoogleFonts.plusJakartaSans(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: const Color(0xFF7127BA),
-                          ),
-                        ),
+                  Container(
+                    height: 180,
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
                       ),
-                      Row(
-                        children: [
-                          if (widget.project.androidLink != null)
-                            IconButton(
-                              onPressed: () => launchUrl(
-                                Uri.parse(widget.project.androidLink!),
-                              ),
-                              icon: const FaIcon(
-                                FontAwesomeIcons.android,
-                                size: 18,
-                                color: Colors.white70,
-                              ),
-                            ),
-                          if (widget.project.iosLink != null)
-                            IconButton(
-                              onPressed: () =>
-                                  launchUrl(Uri.parse(widget.project.iosLink!)),
-                              icon: const FaIcon(
-                                FontAwesomeIcons.apple,
-                                size: 18,
-                                color: Colors.white70,
-                              ),
-                            ),
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.black.withValues(alpha: 0.1),
+                          Colors.black.withValues(alpha: 0.8),
                         ],
                       ),
+                    ),
+                  ),
+                  Positioned.fill(
+                    child: Center(
+                      child: Text(
+                        "1",
+                        style: GoogleFonts.plusJakartaSans(
+                          color: Colors.white.withValues(alpha: 0.15),
+                          fontSize: 80,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 25),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        widget.project.title,
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        widget.project.description,
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white.withValues(alpha: 0.7),
+                          height: 1.4,
+                        ),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      const Spacer(), // Pushes buttons to the bottom of the card
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            if (widget.project.androidLink != null)
+                              _buildActionButton(
+                                icon: FontAwesomeIcons.googlePlay,
+                                label: "Play Store",
+                                onPressed: () => launchUrl(
+                                  Uri.parse(widget.project.androidLink!),
+                                ),
+                              ),
+                            if (widget.project.iosLink != null)
+                              _buildActionButton(
+                                icon: FontAwesomeIcons.appStoreIos,
+                                label: "App Store",
+                                onPressed: () => launchUrl(
+                                  Uri.parse(widget.project.iosLink!),
+                                ),
+                              ),
+                            if (widget.project.websiteLink != null)
+                              _buildActionButton(
+                                icon: FontAwesomeIcons.globe,
+                                label: "Website",
+                                onPressed: () => launchUrl(
+                                  Uri.parse(widget.project.websiteLink!),
+                                ),
+                              ),
+                          ],
+                        ),
+                      ),
                     ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildActionButton({
+    required IconData icon,
+    required String label,
+    required VoidCallback onPressed,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          gradient: LinearGradient(
+            colors: [
+              const Color(0xFF7127BA).withValues(alpha: 0.2),
+              Colors.white.withValues(alpha: 0.05),
+            ],
+          ),
+          border: Border.all(
+            color: Colors.white.withValues(alpha: 0.1),
+            width: 1,
+          ),
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: onPressed,
+            borderRadius: BorderRadius.circular(10),
+            hoverColor: const Color(0xFF7127BA).withValues(alpha: 0.2),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  FaIcon(icon, size: 14, color: Colors.white),
+                  const SizedBox(width: 8),
+                  Text(
+                    label,
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
