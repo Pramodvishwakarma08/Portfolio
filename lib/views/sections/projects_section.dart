@@ -49,7 +49,7 @@ class ProjectsSection extends StatelessWidget {
                       description:
                           "A full-featured fantasy cricket mobile application built with Flutter, inspired by Dream11. Users can create custom teams, join contests, track live scores, and manage their winnings.",
                       imageUrl:
-                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_2.jpeg",
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_5.jpeg",
                       isAsset: false,
                       techStack: [
                         "Flutter",
