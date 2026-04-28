@@ -48,7 +48,8 @@ class ProjectsSection extends StatelessWidget {
                       title: "King 11",
                       description:
                           "A full-featured fantasy cricket mobile application built with Flutter, inspired by Dream11. Users can create custom teams, join contests, track live scores, and manage their winnings.",
-                      imageUrl: "",
+                      imageUrl:
+                          "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_2.jpeg",
                       isAsset: false,
                       techStack: [
                         "Flutter",
@@ -67,7 +68,21 @@ class ProjectsSection extends StatelessWidget {
                         "Live match scorecards and player performance stats",
                         "Real-time updates using Supabase triggers",
                       ],
-                      screenshots: [],
+                      screenshots: [
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_1.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_2.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_3.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_4.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_5.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_6.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_7.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_8.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_10.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_12.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_13.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_15.jpeg",
+                        "https://lsscqzslznlnflfstbxa.supabase.co/storage/v1/object/public/persnal_use/king_17.jpeg",
+                      ],
                     ),
                     isMobile,
                   ),
