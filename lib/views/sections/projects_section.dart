@@ -45,6 +45,34 @@ class ProjectsSection extends StatelessWidget {
                 children: [
                   _projectCard(
                     ProjectModel(
+                      title: "King 11",
+                      description:
+                          "A full-featured fantasy cricket mobile application built with Flutter, inspired by Dream11. Users can create custom teams, join contests, track live scores, and manage their winnings.",
+                      imageUrl: "",
+                      isAsset: false,
+                      techStack: [
+                        "Flutter",
+                        "Supabase",
+                        "GetX",
+                        "PostgreSQL",
+                        "Dio",
+                      ],
+                      keyFeatures: [
+                        "Email-based OTP login/signup and Google Sign-In",
+                        "Browse upcoming and live cricket matches",
+                        "Create custom fantasy teams (select 11 players within budget)",
+                        "Choose Captain and Vice-Captain (2x and 1.5x points)",
+                        "Join various contest types (head-to-head, mega contests)",
+                        "Multi-balance wallet system",
+                        "Live match scorecards and player performance stats",
+                        "Real-time updates using Supabase triggers",
+                      ],
+                      screenshots: [],
+                    ),
+                    isMobile,
+                  ),
+                  _projectCard(
+                    ProjectModel(
                       title: "Coupoint.",
                       description:
                           "Discount Coupon Marketplace Platform connecting users with local businesses.",
